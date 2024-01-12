@@ -25,5 +25,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
 
-      - name: deploy static site to s3 bucket aws
+      - name: deploy static site to s3 bucket aws cloud
         run: aws s3 sync build/ s3://frontendbucket-s3
